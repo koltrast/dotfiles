@@ -9,11 +9,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'lervag/vimtex'
+Plug 'junegunn/limelight.vim'
 "Plug 'dylanaraps/fff.vim'
-"Plug 'davidgranstrom/scnvim'
 "Plug 'dhruvasagar/vim-table-mode'
-"Plug 'mechatroner/rainbow_csv'
-Plug 'arcticicestudio/nord-vim'
+"Plug 'arcticicestudio/nord-vim'
 "Plug 'junegunn/seoul256.vim'
 call plug#end()
 
@@ -31,8 +30,8 @@ set mouse=a 		" Allow mouse control in all modes
 "   Formating   "
 """""""""""""""""
 set textwidth=79
-au BufRead /tmp/mutt-* set tw=72
-au BufRead /tmp/mutt-* set spell spelllang:fr
+"au BufRead /tmp/mutt-* set tw=72
+"au BufRead /tmp/mutt-* set spell spelllang:fr
 au BufRead *.csv set tw=0
 set tabstop=4		" Witdh of the tab charater
 set softtabstop=4	" How many columns the tab key inserts
@@ -57,8 +56,8 @@ set incsearch           " But do highlight as you type your search.
 set ignorecase          " Make searches case-insensitive.
 set ruler               " Always show info along bottom.
 set colorcolumn=80	" Highlight the 80th column
-au BufRead /tmp/mutt-* set colorcolumn=72
+"au BufRead /tmp/mutt-* set colorcolumn=72
 au BufRead *.csv set colorcolumn=0
 set nowrap
-colorscheme nord
+"colorscheme nord
 "colorscheme wal 	  " set colorscheme
