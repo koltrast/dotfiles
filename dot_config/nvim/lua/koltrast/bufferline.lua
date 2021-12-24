@@ -12,7 +12,7 @@ require('bufferline').setup {
         },
         show_buffer_icons = false,
         show_buffer_close_icons = false,
-        show_close_icon = true,
+        show_close_icon = false,
         enforce_regular_tabs = false,
         -- hide separators
         separator_style = {'',''},
