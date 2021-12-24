@@ -49,6 +49,7 @@ Plug 'kyazdani42/nvim-web-devicons'     " Devicons
 Plug 'junegunn/goyo.vim'                " No-distraction mode
 Plug 'junegunn/limelight.vim'           " highlight current line
 Plug 'akinsho/bufferline.nvim'          " Buffers
+Plug 'kyazdani42/nvim-tree.lua'                    " File explorer
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " Color scheme
 " Git
 Plug 'tpope/vim-fugitive'
@@ -68,4 +69,3 @@ let g:tidal_target = "terminal"
 
 colorscheme tokyonight
 set background=dark
-
