@@ -21,11 +21,23 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'nvim-lua/plenary.nvim'
   use 'lewis6991/gitsigns.nvim'
+  use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
   use {'lervag/vimtex', ft = {'tex'}}
   use {'ledger/vim-ledger', ft = {'ledger'}}
-  use {'tidalcycles/vim-tidal',ft = {'tidal'}}
+  use {'tidalcycles/vim-tidal', ft = {'tidal'}}
+  -- theme
   use 'folke/tokyonight.nvim'
-  
+  use({
+      'rose-pine/neovim',
+      as = 'rose-pine',
+      tag = 'v0.1.0', -- Optional tag release
+      config = function()
+        vim.cmd('colorscheme rose-pine')
+    end
+})
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

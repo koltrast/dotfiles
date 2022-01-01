@@ -12,3 +12,5 @@ require('plugins/lualine')
 require('plugins/bufferline')
 require('plugins/nvim-tree')
 require('plugins/gitsigns')
+require('plugins/nvim-treesitter')
+
