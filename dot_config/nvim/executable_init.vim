@@ -53,17 +53,19 @@ Plug 'kyazdani42/nvim-tree.lua'                    " File explorer
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " Color scheme
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 " Misc
 Plug 'lervag/vimtex'
 Plug 'tidalcycles/vim-tidal'
+Plug 'ledger/vim-ledger'
 
 call plug#end()
 
 lua require('koltrast')
 
 let g:tidal_target = "terminal"
-let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_enable_italic = 1
 
 " --- Colors
