@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
   use {'lervag/vimtex', ft = {'tex'}}
-  use {'ledger/vim-ledger', ft = {'ledger'}}
+  use 'ledger/vim-ledger'
   use {'tidalcycles/vim-tidal', ft = {'tidal'}}
   -- theme
   use 'folke/tokyonight.nvim'
