@@ -11,10 +11,6 @@ local default_opts = { noremap = true, silent = true }
 -- {W} > [É]
 map('n', 'é', 'w', default_opts)
 map('n', 'É', 'W', default_opts)
---map('n', 'aé', 'aw', default_opts)
---map('n', 'aÉ', 'aW', default_opts)
---map('n', 'ié', 'iw', default_opts)
---map('n', 'iÉ', 'iW', default_opts)
 map('n', 'w', '<C-w>', default_opts)
 map('n', 'W', '<C-w><C-w>', default_opts)
 
@@ -41,7 +37,7 @@ map('', 'L', 'C', default_opts)    -- to the end of line
 map('', 'h', 'r', default_opts)    -- a character
 map('', 'H', 'R', default_opts)    -- replace mode
 -- {K} = substitute
-map('', 'k', 'S', default_opts)    -- character
+map('', 'k', 's', default_opts)    -- character
 map('', 'K', 'S', default_opts)    -- line
 -- spell
 map('n', ']k', ']s', default_opts)
