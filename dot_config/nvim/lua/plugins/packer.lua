@@ -9,9 +9,14 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- status line
   use 'nvim-lualine/lualine.nvim'
-  use 'kyazdani42/nvim-web-devicons'
   -- file explorer
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = function() require'nvim-tree'.setup {} end
+    }
   -- buffers
   use 'akinsho/bufferline.nvim'
   -- no-distraction mode
@@ -26,7 +31,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
   use {'lervag/vimtex', ft = {'tex'}}
-  use 'ledger/vim-ledger'
+  use {'ledger/vim-ledger', ft = {'ledger'}}
   use {'tidalcycles/vim-tidal', ft = {'tidal'}}
   -- theme
   use 'folke/tokyonight.nvim'
