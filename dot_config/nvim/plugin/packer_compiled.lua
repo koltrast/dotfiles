@@ -206,14 +206,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
@@ -223,17 +223,11 @@ vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType tidal ++once lua require("packer.load")({'vim-tidal'}, { ft = "tidal" }, _G.packer_plugins)]]
-vim.cmd [[au FileType ledger ++once lua require("packer.load")({'vim-ledger'}, { ft = "ledger" }, _G.packer_plugins)]]
 vim.cmd [[au FileType tex ++once lua require("packer.load")({'vimtex'}, { ft = "tex" }, _G.packer_plugins)]]
+vim.cmd [[au FileType ledger ++once lua require("packer.load")({'vim-ledger'}, { ft = "ledger" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 vim.cmd [[augroup filetypedetect]]
-time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]], true)
-vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]]
-time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]], false)
-time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]], true)
-vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]]
-time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]], false)
 time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/cls.vim]], true)
 vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/cls.vim]]
 time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/cls.vim]], false)
@@ -243,6 +237,12 @@ time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/
 time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/tikz.vim]], true)
 vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/tikz.vim]]
 time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vimtex/ftdetect/tikz.vim]], false)
+time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]], true)
+vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]]
+time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-tidal/ftdetect/tidal.vim]], false)
+time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]], true)
+vim.cmd [[source /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]]
+time([[Sourcing ftdetect script at: /Users/koltrast/.local/share/nvim/site/pack/packer/opt/vim-ledger/ftdetect/ledger.vim]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
 
