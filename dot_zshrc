@@ -1,11 +1,9 @@
 # Sources
 # source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
-[ -f "/users/koltrast/.ghcup/env" ] && source "/users/koltrast/.ghcup/env" # ghcup-env
-
 . $HOME/.ghcup/env
 
-export PATH=/opt/homebrew/opt/llvm/bin:/opt/homebrew/bin:~/.local/bin:$PATH
+export PATH=/opt/homebrew/opt/llvm/bin:/opt/homebrew/bin:$PATH
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
@@ -18,7 +16,7 @@ eval "$(starship init zsh)"
 #pfetch
 
 # set default text editor
-export EDITOR="lvim"
+export EDITOR="nvim"
 
 # vi mode
 bindkey -v
@@ -51,4 +49,3 @@ f() {
 #export FFF_KEY_RENAME="a"
 
 eval "$(pyenv init --path)"
-
