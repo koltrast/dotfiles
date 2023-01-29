@@ -1,9 +1,9 @@
 # Sources
 # source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
-[ -f "/users/koltrast/.ghcup/env" ] && source "/users/koltrast/.ghcup/env" # ghcup-env
+#[ -f "/users/koltrast/.ghcup/env" ] && source "/users/koltrast/.ghcup/env" # ghcup-env
 
-. $HOME/.ghcup/env
+#$HOME/.ghcup/env
 
 export PATH=/opt/homebrew/opt/llvm/bin:/opt/homebrew/bin:~/.local/bin:$PATH
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
@@ -50,5 +50,4 @@ f() {
 #export FFF_KEY_LINK="k"
 #export FFF_KEY_RENAME="a"
 
-eval "$(pyenv init --path)"
-
+#eval "$(pyenv init --path)"
