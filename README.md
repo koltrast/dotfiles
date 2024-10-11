@@ -1,4 +1,4 @@
-# Koltrat's Dotfiles
+# Koltrast's Dotfiles
 
 This setup stores my dotfiles in a bare Git repository based on [this guide](https://www.atlassian.com/git/tutorials/dotfiles). It's simple, uses no symlinks, and version-controls config files directly in `$HOME`.
 
