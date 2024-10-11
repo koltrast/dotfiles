@@ -1,0 +1,14 @@
+[user]
+	name = koltrast
+	email = koltrast@pm.me
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
+[core]
+	excludesfile = /Users/koltrast/.gitignore_global
+	editor = vim
+[commit]
+	template = /Users/koltrast/.gitmessage.txt
