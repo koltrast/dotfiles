@@ -8,7 +8,27 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "SpaceFN: Space+[hjkl] to Left, Down, Up, Right",
+                        "description": "SpaceFN: Space+right_option to escape",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "spacefn_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_option",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "SpaceFN: Space+[sdef] to Left, Down, Up, Right",
                         "manipulators": [
                             {
                                 "conditions": [
