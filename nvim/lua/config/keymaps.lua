@@ -1,3 +1,7 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+-- Ergo-L tweaks
+
+vim.keymap.set("n", "+", "gj", { noremap = true })
+vim.keymap.set("n", "-", "gk", { noremap = true })
+
+vim.keymap.set("n", ",", ";", { noremap = true })
+vim.keymap.set("n", ";", ",", { noremap = true })
