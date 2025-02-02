@@ -1,0 +1,16 @@
+plugins: fromfilename lastgenre
+directory: ~/Music/beets
+library: ~/data/musiclibrary.db
+
+lastgenre:
+    auto: yes
+    canonical: yes
+    count: 1
+    force: yes
+    source: album
+    whitelist: yes
+    min_weight: 10
+    fallback:
+    separator: ', '
+    prefer_specific: no
+    title_case: yes
