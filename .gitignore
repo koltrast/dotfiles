@@ -1,3 +1,6 @@
 .DS_Store
 fzf
 history.txt
+tmux/plugins/
+.zsh_history
+.zsh_sessions/
