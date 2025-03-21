@@ -16,4 +16,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 alias k='kubectl'
 
 source <(kubectl completion zsh)
-complete -o default -F __start_kubectl k
+compdef __start_kubectl k
