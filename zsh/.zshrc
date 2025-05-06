@@ -10,6 +10,8 @@ export PATH="$HOME/.rd/bin:$PATH"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# fzf
+source <(fzf --zsh)
 
 # Zettelkasten
 
