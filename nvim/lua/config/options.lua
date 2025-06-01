@@ -3,4 +3,4 @@
 -- Add any additional options here
 vim.g.lazyvim_prettier_needs_config = false
 vim.opt.spelllang = { "en", "fr" }
-vim.opt.conceallevel = 0
+vim.opt.conceallevel = 1
