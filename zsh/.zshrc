@@ -1,14 +1,18 @@
-eval "$(/opt/homebrew/bin/starship init zsh)"
+eval "$(starship init zsh)"
 
 autoload -Uz compinit
 compinit
 
-export EDITOR=/opt/homebrew/bin/nvim
+export EDITOR=nvim
 
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.rd/bin:$PATH"
 
 export XDG_CONFIG_HOME="$HOME/.config"
+
+#dotfiles
+
+alias dotfiles="cd ~/Repos/codeberg.org/kltrst/dotfiles/"
 
 # fzf
 source <(fzf --zsh)
@@ -17,6 +21,10 @@ source <(fzf --zsh)
 
 alias cdzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten"
 alias nvzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten && nvim"
+
+# task
+
+alias t=task
 
 # kubectl
 
