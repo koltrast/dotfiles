@@ -22,9 +22,10 @@ source <(fzf --zsh)
 alias cdzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten"
 alias nvzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten && nvim"
 
-# task
+# Taskwarrior & Timewarrior
 
 alias t=task
+alias tw=timew
 
 # kubectl
 
