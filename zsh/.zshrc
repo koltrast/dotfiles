@@ -10,9 +10,9 @@ export PATH="$HOME/.rd/bin:$PATH"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-#dotfiles
+# dotfiles
 
-alias dotfiles="cd ~/Repos/codeberg.org/kltrst/dotfiles/"
+alias dotfiles="cd ~/Repos/codeberg.org/kltrst/dotfiles/ && nvim"
 
 # fzf
 source <(fzf --zsh)
@@ -32,3 +32,9 @@ alias t=task
 #
 # source <(kubectl completion zsh)
 # compdef __start_kubectl k
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
