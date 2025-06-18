@@ -12,7 +12,7 @@ return {
       workspaces = {
         {
           name = "Notes",
-          path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zettlekasten/",
+          path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zettelkasten/",
         },
       },
       -- ui = {enable = false},
