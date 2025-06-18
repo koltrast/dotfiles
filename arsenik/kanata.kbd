@@ -26,11 +26,11 @@
 ;; Choose here if you want to add an angle mod: ZXCVB are shifted to the left.
 ;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
 
-;;(include defsrc/pc.kbd)  ;; PC, standard finger assignment
+;; (include defsrc/pc.kbd)  ;; PC, standard finger assignment
 ;; (include defsrc/mac.kbd)  ;; Mac, standard finger assignment
 ;; (include defsrc/pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
 ;; (include defsrc/mac_anglemod.kbd)  ;; Mac, ZXCVB are shifted to the left
-rinclude defsrc/mac_ansi_anglemod.kbd)
+   (include defsrc/mac_ansi_anglemod.kbd)
 
 ;;-----------------------------------------------------------------------------
 ;; `Base` layer: standard or dual keys? (layer-taps, homerow mods?)
@@ -73,7 +73,7 @@ rinclude defsrc/mac_ansi_anglemod.kbd)
 (defcfg
   ;; Enabled makes kanata process keys that are not defined in defsrc
   ;; Fixes altgr for Windows (see Arsenik issue #22)
- ;; process-unmapped-keys yes
+  process-unmapped-keys yes
   windows-altgr cancel-lctl-press
 macos-dev-names-include (
 "Apple Internal Keyboard / Trackpad"
