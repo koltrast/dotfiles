@@ -122,11 +122,12 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-alt-shift-p = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-   ctrl-alt-shift-1 = 'workspace 1'
+    ctrl-alt-shift-1 = 'workspace 1'
     ctrl-alt-shift-2 = 'workspace 2'
     ctrl-alt-shift-3 = 'workspace 3'
     ctrl-alt-shift-4 = 'workspace 4'
     ctrl-alt-shift-5 = 'workspace 5'
+    ctrl-alt-shift-6 = 'workspace 6'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     ctrl-alt-shift-cmd-1 = 'move-node-to-workspace 1'
@@ -134,6 +135,7 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-alt-shift-cmd-3 = 'move-node-to-workspace 3'
     ctrl-alt-shift-cmd-4 = 'move-node-to-workspace 4'
     ctrl-alt-shift-cmd-5 = 'move-node-to-workspace 5'
+    ctrl-alt-shift-cmd-6 = 'move-node-to-workspace 6'
     
     ctrl-alt-shift-cmd-g = 'fullscreen'
 
@@ -178,7 +180,15 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'net.freemacsoft.AppCleaner'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'org.torproject.torbrowser'
 run = 'layout floating'
 
 [[on-window-detected]]
