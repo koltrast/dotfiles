@@ -19,8 +19,8 @@ source <(fzf --zsh)
 
 # Zettelkasten
 
-alias cdzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten"
-alias nvzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettlekasten && nvim"
+alias cdzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettelkasten"
+alias nvzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettelkasten && nvim"
 
 # Taskwarrior & Timewarrior
 
