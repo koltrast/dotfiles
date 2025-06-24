@@ -1,12 +1,11 @@
 # [Created by task 3.4.1 6/6/2025 19:00:25]
-data.location=/Users/koltrast/.task
 news.version=3.4.1
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
 
 # data.location=~/.local/share/task
- data.location=~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/task
+data.location=~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/task
 hooks.location=~/.config/task/hooks
 
 # Color theme (uncomment one to use)
