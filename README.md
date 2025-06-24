@@ -4,4 +4,5 @@
 
 ```bash
 stow .
+stow --target=$HOME --dir=. zsh
 ```
