@@ -8,12 +8,16 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['exec-and-forget sketchybar', 'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0']
-
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+after-startup-command = [
+# 'exec-and-forget sketchybar',
+'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
+
+ # Notify Sketchybar about workspace change
+# exec-on-workspace-change = ['/bin/bash', '-c',
+#     'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# ]
+
 # Start AeroSpace at login
 start-at-login = true
 
@@ -61,12 +65,12 @@ automatically-unhide-macos-hidden-apps = true
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 10
-    inner.vertical =   10
-    outer.left =      10
-    outer.bottom =     10
-    outer.top =        10
-    outer.right =      70
+    inner.horizontal = 7
+    inner.vertical =   7
+    outer.left =      7
+    outer.bottom =     7
+    outer.top =        7
+    outer.right =      7
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -147,8 +151,10 @@ automatically-unhide-macos-hidden-apps = true
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     ctrl-alt-shift-semicolon = 'mode service'
 
-    cmd-h = [] # Disable "hide application"
-    cmd-alt-h = [] # Disable "hide others"
+# Applications launcher
+    ctrl-alt-shift-enter = 'exec-and-forget open -n /Applications/Ghostty.app/'
+    ctrl-alt-shift-b = 'exec-and-forget open -n /Applications/Firefox.app/'
+
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -188,10 +194,6 @@ if.app-id = 'net.freemacsoft.AppCleaner'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'org.torproject.torbrowser'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
@@ -202,6 +204,22 @@ run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'net.mullvad.mullvadbrowser'
+run = ['layout floating','move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = 'org.torproject.torbrowser'
+run = ['layout floating','move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = 'org.keepassxc.keepassxc'
+run = ['layout floating','move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
