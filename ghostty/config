@@ -1,5 +1,5 @@
 theme = catppuccin-mocha
-font-family = JetBrainsMonoNL NFM Regular, NanumGothicCoding Regular
+# font-family = JetBrainsMonoNL NFM Regular, NanumGothicCoding Regular
 font-size = 16
 background-blur-radius = 5
 mouse-hide-while-typing = true
