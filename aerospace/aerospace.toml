@@ -211,7 +211,7 @@ run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'net.mullvad.mullvadbrowser'
-run = ['layout floating','move-node-to-workspace 2']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'org.torproject.torbrowser'
