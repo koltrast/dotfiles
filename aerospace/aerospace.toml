@@ -206,6 +206,10 @@ if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace 2'
 
@@ -223,6 +227,10 @@ run = ['layout floating','move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'org.standardnotes.standardnotes'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
