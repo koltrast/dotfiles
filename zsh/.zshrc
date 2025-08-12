@@ -17,11 +17,6 @@ alias dotfiles="cd ~/Repos/codeberg.org/kltrst/dotfiles/ && nvim"
 # fzf
 source <(fzf --zsh)
 
-# Zettelkasten
-
-alias cdzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettelkasten"
-alias nvzk="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Zettelkasten && nvim"
-
 # Taskwarrior & Timewarrior
 
 alias t=task
