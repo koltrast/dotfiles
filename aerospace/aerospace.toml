@@ -198,6 +198,14 @@ if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'app.reeder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.culturedcode.ThingsMac'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty' 
 run = 'move-node-to-workspace 1'
 
@@ -231,6 +239,10 @@ run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'org.standardnotes.standardnotes'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'de.zettelkasten.TheArchive'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
