@@ -69,7 +69,7 @@ automatically-unhide-macos-hidden-apps = true
     inner.vertical =   7
     outer.left =      7
     outer.bottom =     7
-    outer.top =        7
+    outer.top =        0
     outer.right =      7
 
 # 'main' binding mode declaration
@@ -211,6 +211,10 @@ run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
