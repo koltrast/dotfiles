@@ -2,6 +2,7 @@
 fzf
 history.txt
 tmux/plugins/
+nvim/spell/
 .zsh_history
 .zsh_sessions/
 karabiner/automatic_backups/
