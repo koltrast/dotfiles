@@ -69,7 +69,7 @@ automatically-unhide-macos-hidden-apps = true
     inner.vertical =   5
     outer.left =      7
     outer.bottom =     7
-    outer.top =        7
+    outer.top =        0
     outer.right =      7
 
 # 'main' binding mode declaration
@@ -238,7 +238,7 @@ run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = 'move-node-to-workspace 3'
+run = ['layout floating', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
