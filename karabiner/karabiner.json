@@ -166,8 +166,24 @@
                     },
                     "simple_modifications": [
                         {
+                            "from": { "key_code": "backslash" },
+                            "to": [{ "key_code": "delete_or_backspace" }]
+                        },
+                        {
                             "from": { "key_code": "caps_lock" },
                             "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "delete_or_backspace" },
+                            "to": [{ "key_code": "backslash" }]
+                        },
+                        {
+                            "from": { "key_code": "escape" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "escape" }]
                         },
                         {
                             "from": { "key_code": "right_command" },
@@ -185,10 +201,27 @@
                         "product_id": 45930,
                         "vendor_id": 1133
                     },
+                    "ignore_vendor_events": true,
                     "simple_modifications": [
+                        {
+                            "from": { "key_code": "backslash" },
+                            "to": [{ "key_code": "delete_or_backspace" }]
+                        },
                         {
                             "from": { "key_code": "caps_lock" },
                             "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "delete_or_backspace" },
+                            "to": [{ "key_code": "backslash" }]
+                        },
+                        {
+                            "from": { "key_code": "escape" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "escape" }]
                         },
                         {
                             "from": { "key_code": "right_command" },
@@ -198,7 +231,8 @@
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "right_command" }]
                         }
-                    ]
+                    ],
+                    "treat_as_built_in_keyboard": true
                 },
                 {
                     "identifiers": {

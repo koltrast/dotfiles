@@ -10,7 +10,7 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
 # 'exec-and-forget sketchybar',
-'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+  #'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
 
  # Notify Sketchybar about workspace change
@@ -19,7 +19,7 @@ after-startup-command = [
 # ]
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -65,12 +65,12 @@ automatically-unhide-macos-hidden-apps = true
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 5
-    inner.vertical =   5
-    outer.left =      7
-    outer.bottom =     7
-    outer.top =        0
-    outer.right =      7
+    inner.horizontal = 10
+    inner.vertical =   10
+    outer.left =      10
+    outer.bottom =     10
+    outer.top =        3
+    outer.right =      10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -212,6 +212,10 @@ if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Safari'
 run = 'move-node-to-workspace 2'
 
@@ -245,6 +249,10 @@ if.app-id = 'com.apple.MobileSMS'
 run = ['layout floating', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
+if.app-id = 'ch.protonmail.desktop'
+run = ['layout floating', 'move-node-to-workspace 3']
+
+[[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
 run = ['layout floating', 'move-node-to-workspace 3']
 
@@ -266,6 +274,11 @@ if.app-id = 'net.shinyfrog.bear'
 run = 'move-node-to-workspace 4'
 
 # Workspace 5
+
+[[on-window-detected]]
+if.app-id = 'com.captureone.captureone16'
+run = ['move-node-to-workspace 5']
+
 # Workspace 6 - Media
 [[on-window-detected]]
 if.app-id = 'com.audirvana.Audirvana-Studio'
