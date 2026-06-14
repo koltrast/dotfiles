@@ -7,6 +7,7 @@ export EDITOR=nvim
 
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.rd/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
