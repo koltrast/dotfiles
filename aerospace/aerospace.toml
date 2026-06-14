@@ -65,11 +65,11 @@ automatically-unhide-macos-hidden-apps = true
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 10
-    inner.vertical =   10
+    inner.horizontal = 7
+    inner.vertical =   7
     outer.left =      10
     outer.bottom =     10
-    outer.top =        3
+    outer.top =        10
     outer.right =      10
 
 # 'main' binding mode declaration
@@ -140,7 +140,7 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-alt-shift-cmd-4 = 'move-node-to-workspace 4'
     ctrl-alt-shift-cmd-5 = 'move-node-to-workspace 5'
     ctrl-alt-shift-cmd-6 = 'move-node-to-workspace 6'
-    
+
     ctrl-alt-shift-cmd-g = 'fullscreen'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -201,9 +201,13 @@ run = 'layout floating'
 if.app-id = 'com.culturedcode.ThingsMac'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.hogbaysoftware.Bike'
+run = 'layout floating'
+
 # Workspace 1
 [[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty' 
+if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace 1'
 
 # Workspace 2 - Browser
@@ -272,6 +276,10 @@ run = 'move-node-to-workspace 4'
 [[on-window-detected]]
 if.app-id = 'net.shinyfrog.bear'
 run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'org.standardnotes.standardnotes'
+run = ['layout floating', 'move-node-to-workspace 4']
 
 # Workspace 5
 
